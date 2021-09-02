@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:TabbedPageWithNavigationPage;assembly=TabbedPageWithNavigationPage"
+            x:Class="TabbedPageWithNavigationPage.MainPage">
+    
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="5,0,0,0" Spacing="0">
+            <Button HorizontalOptions="Start"
+                    x:Name="BackArrow"
+                    Clicked="Back_Clicked"
+                    Text="return"
+                    TextColor="White"
+                    WidthRequest="80"
+                    HeightRequest="45"
+                    BackgroundColor="Red"/>          
+        </StackLayout>
+ </NavigationPage.TitleView>
+ 
+    <local:TodayPage />
+    <local:SchedulePage />
+    <local:SettingsPage />
+
+</TabbedPage>
